@@ -18,6 +18,8 @@ import 'package:flutter_sixvalley_ecommerce/basewidget/show_custom_snakbar.dart'
 import 'package:flutter_sixvalley_ecommerce/features/cart/views/cart_screen.dart';
 import 'package:provider/provider.dart';
 
+import '../../../main.dart';
+
 class CartBottomSheet extends StatefulWidget {
   final pd.ProductDetailsModel? product;
   final Function? callback;
@@ -359,7 +361,7 @@ class CartBottomSheetState extends State<CartBottomSheet> {
                                   }
                                 }
                                 );
-
+                                Navigator.of(Get.context!).pop();
                               }}),
                       ),
                       const SizedBox(width: Dimensions.paddingSizeDefault),
