@@ -77,8 +77,7 @@ class CartWidgetHomePage extends StatelessWidget {
           ),
         ),
         InkWell(
-          onTap: () => Navigator.push(
-              context, MaterialPageRoute(builder: (_) => facebook("https://www.instagram.com/boutique_ozcan"))),
+          onTap: () => facebook("https://www.instagram.com/boutique_ozcan"),
           child: Image.asset(
             Images.instagramImage,
             height: Dimensions.iconSizeDefault,
@@ -87,8 +86,7 @@ class CartWidgetHomePage extends StatelessWidget {
         ),
         IconButton(
           padding: const EdgeInsets.symmetric(horizontal: 0),
-          onPressed: () => Navigator.push(
-              context, MaterialPageRoute(builder: (_) =>  whatsapp('+9647744555500'))),
+          onPressed: () =>  whatsapp('+9647744555500'),
           icon: Image.asset(
             Images.whatsappImage,
             height: Dimensions.iconSizeDefault,
