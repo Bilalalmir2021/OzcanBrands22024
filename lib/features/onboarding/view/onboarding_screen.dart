@@ -7,6 +7,8 @@ import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
 import 'package:flutter_sixvalley_ecommerce/features/auth/views/auth_screen.dart';
 import 'package:provider/provider.dart';
 
+import '../../dashboard/dashboard_screen.dart';
+
 class OnBoardingScreen extends StatelessWidget {
   final Color indicatorColor;
   final Color selectedIndicatorColor;
@@ -66,7 +68,7 @@ class OnBoardingScreen extends StatelessWidget {
                         onTap: () {
                           if (onBoardingList.selectedIndex == onBoardingList.onBoardingList.length - 1) {
                             Provider.of<SplashProvider>(context, listen: false).disableIntro();
-                            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const AuthScreen()));
+                            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const DashBoardScreen()));
                           } else {
                             _pageController.nextPage(duration: const Duration(milliseconds: 500), curve: Curves.easeIn);
                           }

@@ -3,6 +3,8 @@ class Images {
   static const String splashLogo = 'assets/images/logo_splash.png';
   static const String moreFilledImage = 'assets/images/more_filled.png';
   static const String cartArrowDownImage = 'assets/images/cart_arrow_down.png';
+  static const String instagramImage = 'assets/images/pngegg.png';
+  static const String whatsappImage = 'assets/images/whatsapp.png';
   static const String cartImage = 'assets/images/cart.png';
   static const String homeImage = 'assets/images/home.png';
   static const String officeImage = 'assets/images/office.png';

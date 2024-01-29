@@ -8,6 +8,7 @@ import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
 import 'package:flutter_sixvalley_ecommerce/features/cart/views/cart_screen.dart';
 import 'package:flutter_sixvalley_ecommerce/features/notification/view/notification_screen.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class CartWidgetHomePage extends StatelessWidget {
   const CartWidgetHomePage({super.key});
@@ -17,39 +18,57 @@ class CartWidgetHomePage extends StatelessWidget {
     return Row(
       children: [
         Consumer<NotificationProvider>(
-          builder: (context, notificationProvider, _) {
-            return IconButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const NotificationScreen())),
-              icon: Stack(clipBehavior: Clip.none, children: [
-                Image.asset(Images.notification,
-                    height: Dimensions.iconSizeDefault,
-                    width: Dimensions.iconSizeDefault,
-                    color: ColorResources.getPrimary(context)),
-                Positioned(top: -4, right: -4,
-                  child: CircleAvatar(radius: 7, backgroundColor: ColorResources.red,
-                    child: Text(notificationProvider.notificationModel?.newNotificationItem.toString() ?? '0',
-                        style: titilliumSemiBold.copyWith(color: ColorResources.white, fontSize: Dimensions.fontSizeExtraSmall,
-                        )),
-                  ),
+            builder: (context, notificationProvider, _) {
+          return IconButton(
+            onPressed: () => Navigator.push(context,
+                MaterialPageRoute(builder: (_) => const NotificationScreen())),
+            icon: Stack(clipBehavior: Clip.none, children: [
+              Image.asset(Images.notification,
+                  height: Dimensions.iconSizeDefault,
+                  width: Dimensions.iconSizeDefault,
+                  color: ColorResources.getPrimary(context)),
+              Positioned(
+                top: -4,
+                right: -4,
+                child: CircleAvatar(
+                  radius: 7,
+                  backgroundColor: ColorResources.red,
+                  child: Text(
+                      notificationProvider
+                              .notificationModel?.newNotificationItem
+                              .toString() ??
+                          '0',
+                      style: titilliumSemiBold.copyWith(
+                        color: ColorResources.white,
+                        fontSize: Dimensions.fontSizeExtraSmall,
+                      )),
                 ),
-
-              ]),
-            );
-          }
-        ),
-
+              ),
+            ]),
+          );
+        }),
         Padding(
           padding: const EdgeInsets.only(right: 12.0),
-          child: IconButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CartScreen())),
+          child: IconButton(
+            onPressed: () => Navigator.push(
+                context, MaterialPageRoute(builder: (_) => const CartScreen())),
             icon: Stack(clipBehavior: Clip.none, children: [
               Image.asset(Images.cartArrowDownImage,
                   height: Dimensions.iconSizeDefault,
                   width: Dimensions.iconSizeDefault,
                   color: ColorResources.getPrimary(context)),
-              Positioned(top: -4, right: -4,
-                child: Consumer<CartController>(builder: (context, cart, child) {
-                  return CircleAvatar(radius: 7, backgroundColor: ColorResources.red,
+              Positioned(
+                top: -4,
+                right: -4,
+                child:
+                    Consumer<CartController>(builder: (context, cart, child) {
+                  return CircleAvatar(
+                    radius: 7,
+                    backgroundColor: ColorResources.red,
                     child: Text(cart.cartList.length.toString(),
-                        style: titilliumSemiBold.copyWith(color: ColorResources.white, fontSize: Dimensions.fontSizeExtraSmall,
+                        style: titilliumSemiBold.copyWith(
+                          color: ColorResources.white,
+                          fontSize: Dimensions.fontSizeExtraSmall,
                         )),
                   );
                 }),
@@ -57,7 +76,33 @@ class CartWidgetHomePage extends StatelessWidget {
             ]),
           ),
         ),
+        InkWell(
+          onTap: () => Navigator.push(
+              context, MaterialPageRoute(builder: (_) => facebook("https://www.instagram.com/boutique_ozcan"))),
+          child: Image.asset(
+            Images.instagramImage,
+            height: Dimensions.iconSizeDefault,
+            width: Dimensions.iconSizeDefault,
+          ),
+        ),
+        IconButton(
+          padding: const EdgeInsets.symmetric(horizontal: 0),
+          onPressed: () => Navigator.push(
+              context, MaterialPageRoute(builder: (_) =>  whatsapp('+9647744555500'))),
+          icon: Image.asset(
+            Images.whatsappImage,
+            height: Dimensions.iconSizeDefault,
+            width: Dimensions.iconSizeDefault,
+          ),
+        ),
       ],
     );
+  }
+  whatsapp(String phone) async {
+    await launchUrlString("whatsapp://send?phone=$phone");
+  }
+
+  facebook(url) async {
+    await launchUrlString(url);
   }
 }

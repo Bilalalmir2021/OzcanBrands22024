@@ -33,12 +33,12 @@ class ProductWidget extends StatelessWidget {
           boxShadow: Provider.of<ThemeProvider>(context, listen: false).darkTheme? null : [BoxShadow(color: Colors.grey.withOpacity(0.2), spreadRadius: 1, blurRadius: 5)],),
         child: Stack(children: [
           Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-            Container(height: 140, decoration: BoxDecoration(
+            Container(height: 180, decoration: BoxDecoration(
                 color: Provider.of<ThemeProvider>(context, listen: false).darkTheme? Theme.of(context).primaryColor.withOpacity(.05) : ColorResources.getIconBg(context),
                 borderRadius: const BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10)),),
               child: ClipRRect(borderRadius: const BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10)),
                 child: CustomImage(image: '${Provider.of<SplashProvider>(context, listen: false).baseUrls!.productThumbnailUrl}/${productModel.thumbnail}',
-                  height: MediaQuery.of(context).size.width/2.45,width: MediaQuery.of(context).size.width, fit: BoxFit.contain,))),
+                  height: MediaQuery.of(context).size.width/2.45,width: MediaQuery.of(context).size.width, fit: BoxFit.cover,))),
 
             // Product Details
             Padding(padding: const EdgeInsets.only(top :Dimensions.paddingSizeSmall,bottom: 5, left: 5,right: 5),
@@ -63,7 +63,7 @@ class ProductWidget extends StatelessWidget {
                     Padding(padding: const EdgeInsets.symmetric(vertical: 5.0),
                       child: Text(productModel.name ?? '', textAlign: TextAlign.center,
                           style: textRegular.copyWith(fontSize: Dimensions.fontSizeDefault,
-                          fontWeight: FontWeight.w400), maxLines: 2, overflow: TextOverflow.ellipsis)),
+                          fontWeight: FontWeight.w400), maxLines: 1, overflow: TextOverflow.ellipsis)),
 
 
 

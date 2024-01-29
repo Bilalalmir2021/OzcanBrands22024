@@ -15,7 +15,6 @@ import 'package:flutter_sixvalley_ecommerce/features/product/provider/product_pr
 import 'package:flutter_sixvalley_ecommerce/features/profile/provider/profile_provider.dart';
 import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
 import 'package:flutter_sixvalley_ecommerce/theme/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/provider/top_seller_provider.dart';
 import 'package:flutter_sixvalley_ecommerce/features/wishlist/provider/wishlist_provider.dart';
 import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
 import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
@@ -42,10 +41,8 @@ import 'package:flutter_sixvalley_ecommerce/features/product/widget/products_vie
 import 'package:flutter_sixvalley_ecommerce/features/deal/view/flash_deal_screen.dart';
 import 'package:flutter_sixvalley_ecommerce/features/product/widget/recommended_product_view.dart';
 import 'package:flutter_sixvalley_ecommerce/features/home/widget/search_widget_home_page.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/widget/top_seller_view.dart';
 import 'package:flutter_sixvalley_ecommerce/features/product/view/view_all_product_screen.dart';
 import 'package:flutter_sixvalley_ecommerce/features/search/search_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/view/all_shop_screen.dart';
 import 'package:provider/provider.dart';
 
 
@@ -64,7 +61,7 @@ class _HomePageState extends State<HomePage> {
      await Provider.of<BannerController>(Get.context!, listen: false).getBannerList(reload);
      await Provider.of<CategoryController>(Get.context!, listen: false).getCategoryList(reload);
      await Provider.of<HomeCategoryProductProvider>(Get.context!, listen: false).getHomeCategoryProductList(reload);
-     await Provider.of<TopSellerProvider>(Get.context!, listen: false).getTopSellerList(reload);
+     // await Provider.of<TopSellerProvider>(Get.context!, listen: false).getTopSellerList(reload);
      await Provider.of<BrandController>(Get.context!, listen: false).getBrandList(reload);
      await Provider.of<ProductProvider>(Get.context!, listen: false).getLatestProductList(1, reload: reload);
      await Provider.of<ProductProvider>(Get.context!, listen: false).getFeaturedProductList('1', reload: reload);
@@ -238,23 +235,23 @@ class _HomePageState extends State<HomePage> {
 
 
                   //top seller
-                  singleVendor?const SizedBox():
-                  Consumer<TopSellerProvider>(
-                    builder: (context, topSellerProvider, child) {
-                      return (topSellerProvider.topSellerList != null && topSellerProvider.topSellerList!.isNotEmpty)?
-                      TitleRow(title: getTranslated('top_seller', context),
-                          onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (_) => const AllTopSellerScreen(topSeller: null, title: 'top_seller',)))):const SizedBox();
-                    }
-                  ),
-                  singleVendor?const SizedBox(height: 0):const SizedBox(height: Dimensions.paddingSizeSmall),
-                  singleVendor?const SizedBox():
-                  Consumer<TopSellerProvider>(
-                    builder: (context, topSellerProvider, child) {
-                      return (topSellerProvider.topSellerList != null && topSellerProvider.topSellerList!.isNotEmpty)?
-                      const Padding(padding: EdgeInsets.only(bottom: Dimensions.homePagePadding),
-                          child: SizedBox(height: 165, child: TopSellerView(isHomePage: true))):const SizedBox();
-                    }
-                  ),
+                  // singleVendor?const SizedBox():
+                  // Consumer<TopSellerProvider>(
+                  //   builder: (context, topSellerProvider, child) {
+                  //     return (topSellerProvider.topSellerList != null && topSellerProvider.topSellerList!.isNotEmpty)?
+                  //     TitleRow(title: getTranslated('top_seller', context),
+                  //         onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (_) => const AllTopSellerScreen(topSeller: null, title: 'top_seller',)))):const SizedBox();
+                  //   }
+                  // ),
+                  // singleVendor?const SizedBox(height: 0):const SizedBox(height: Dimensions.paddingSizeSmall),
+                  // singleVendor?const SizedBox():
+                  // Consumer<TopSellerProvider>(
+                  //   builder: (context, topSellerProvider, child) {
+                  //     return (topSellerProvider.topSellerList != null && topSellerProvider.topSellerList!.isNotEmpty)?
+                  //     const Padding(padding: EdgeInsets.only(bottom: Dimensions.homePagePadding),
+                  //         child: SizedBox(height: 165, child: TopSellerView(isHomePage: true))):const SizedBox();
+                  //   }
+                  // ),
 
 
 

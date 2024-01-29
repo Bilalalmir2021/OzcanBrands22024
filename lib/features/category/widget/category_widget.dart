@@ -18,16 +18,20 @@ class CategoryWidget extends StatelessWidget {
     return Padding(padding: EdgeInsets.only(left : Provider.of<LocalizationProvider>(context, listen: false).isLtr ? Dimensions.homePagePadding : 0,
         right: index+1 == length? Dimensions.paddingSizeDefault : Provider.of<LocalizationProvider>(context, listen: false).isLtr ? 0 : Dimensions.homePagePadding),
       child: Column( children: [
-        Container(height: 70, width: 70, decoration: BoxDecoration(
+        Container(height: 90, width: 90, decoration: BoxDecoration(
             border: Border.all(color: Theme.of(context).primaryColor.withOpacity(.125),width: .25),
             borderRadius: BorderRadius.circular(Dimensions.paddingSizeSmall),
             color: Theme.of(context).primaryColor.withOpacity(.125)),
           child: ClipRRect(borderRadius: BorderRadius.circular(Dimensions.paddingSizeSmall),
-            child: CustomImage(image: '${Provider.of<SplashProvider>(context,listen: false).baseUrls!.categoryImageUrl}''/${category.icon}'))),
+            child: Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: CustomImage(image: '${Provider.of<SplashProvider>(context,listen: false).baseUrls!.categoryImageUrl}''/${category.icon}',
+                fit: BoxFit.contain,alignment: Alignment.center,),
+            ))),
 
         const SizedBox(height: Dimensions.paddingSizeExtraSmall),
-        Center(child: SizedBox(width: 70,
-            child: Text(category.name!, textAlign: TextAlign.center, maxLines: 2,
+        Center(child: SizedBox(width: 90,
+            child: Text(category.name!, textAlign: TextAlign.center, maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: titilliumRegular.copyWith(fontSize: Dimensions.fontSizeSmall,
                   color: ColorResources.getTextTitle(context)))))]),
