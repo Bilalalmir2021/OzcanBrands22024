@@ -38,7 +38,6 @@ class FeaturedProductView extends StatelessWidget {
                     enlargeFactor: 0.3,
                     padEnds: false,
                     enlargeCenterPage: true,
-
                     disableCenter: true,
                     onPageChanged: (index, reason) {
                       prodProvider.setFeaturedIndex(index);
@@ -61,7 +60,9 @@ class FeaturedProductView extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return ProductWidget(productModel: productList![index]);
                 },
-              ): const SizedBox.shrink() : ProductShimmer(isHomePage: true ,isEnabled: prodProvider.firstFeaturedLoading),
+              ):
+              const SizedBox.shrink() :
+              ProductShimmer(isHomePage: true ,isEnabled: prodProvider.firstFeaturedLoading),
 
               prodProvider.isFeaturedLoading ? Center(child: Padding(
                 padding: const EdgeInsets.all(Dimensions.iconSizeExtraSmall),

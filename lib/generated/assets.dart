@@ -79,6 +79,7 @@ class Assets {
   static const String imagesIn = 'assets/images/in.png';
   static const String imagesInbox = 'assets/images/inbox.png';
   static const String imagesInfoQuery = 'assets/images/info_query.png';
+  static const String imagesIq = 'assets/images/iq.png';
   static const String imagesLanguage = 'assets/images/language.png';
   static const String imagesLeft = 'assets/images/left.png';
   static const String imagesLiqpay = 'assets/images/liqpay.png';

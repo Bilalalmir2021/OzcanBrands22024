@@ -7,8 +7,6 @@ import 'package:flutter_sixvalley_ecommerce/basewidget/custom_exit_card.dart';
 import 'package:flutter_sixvalley_ecommerce/features/chat/view/inbox_screen.dart';
 import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
 import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/features/home/view/aster_theme_home_page.dart';
-import 'package:flutter_sixvalley_ecommerce/features/home/view/fashion_theme_home_page.dart';
 import 'package:flutter_sixvalley_ecommerce/features/home/view/home_screens.dart';
 import 'package:flutter_sixvalley_ecommerce/features/more/more_screen.dart';
 import 'package:flutter_sixvalley_ecommerce/features/order/view/order_screen.dart';
@@ -38,16 +36,12 @@ class DashBoardScreenState extends State<DashBoardScreen> {
         NavigationModel(
           name: 'home',
           icon: Images.homeImage,
-          screen: (Provider.of<SplashProvider>(context, listen: false).configModel!.activeTheme == "default")?
-        const HomePage():
-       (Provider.of<SplashProvider>(context, listen: false).configModel!.activeTheme == "theme_aster")?
-        const AsterThemeHomePage(): const FashionThemeHomePage()),
+          screen: const HomePage()),
 
         if(!singleVendor)
           NavigationModel(name: 'inbox', icon: Images.messageImage, screen: const InboxScreen(isBackButtonExist: false)),
           NavigationModel(name: 'orders', icon: Images.shoppingImage, screen:  const OrderScreen(isBacButtonExist: false)),
           NavigationModel(name: 'more', icon: Images.moreImage, screen:  const MoreScreen()),
-
       ];
 
 
@@ -124,7 +118,7 @@ class CustomMenuItem extends StatelessWidget {
       highlightColor: Colors.transparent,
       hoverColor: Colors.transparent,
       onTap: onTap,
-      child: Padding(padding: const EdgeInsets.all(8),
+      child: Padding(padding: const EdgeInsets.all(0),
         child: SizedBox(width: isSelected ? 90 : 50, child: Column(crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center, mainAxisSize: MainAxisSize.min, children: [
 

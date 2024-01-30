@@ -55,7 +55,7 @@ class ProductWidget extends StatelessWidget {
         child: Stack(children: [
           Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
             Container(
-                height: 180,
+                height: 175,
                 decoration: BoxDecoration(
                   color: Provider.of<ThemeProvider>(context, listen: false)
                           .darkTheme

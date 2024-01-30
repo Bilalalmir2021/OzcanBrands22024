@@ -57,6 +57,6 @@ class LocalizationProvider extends ChangeNotifier {
 
 
   String? getCurrentLanguage() {
-    return sharedPreferences!.getString(AppConstants.countryCode) ?? "US";
+    return sharedPreferences!.getString(AppConstants.countryCode) ?? "ar";
   }
 }

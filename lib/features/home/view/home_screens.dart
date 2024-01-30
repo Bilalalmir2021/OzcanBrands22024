@@ -254,7 +254,7 @@ class _HomePageState extends State<HomePage> {
                   // ),
 
 
-
+// if()
                     const Padding(padding: EdgeInsets.only(bottom: Dimensions.homePagePadding),
                       child: RecommendedProductView()),
 
