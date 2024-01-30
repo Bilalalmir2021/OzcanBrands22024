@@ -19,10 +19,10 @@ class CartWidgetHomePage extends StatelessWidget {
       children: [
         Consumer<NotificationProvider>(
             builder: (context, notificationProvider, _) {
-          return IconButton(
-            onPressed: () => Navigator.push(context,
+          return InkWell(
+            onTap: () => Navigator.push(context,
                 MaterialPageRoute(builder: (_) => const NotificationScreen())),
-            icon: Stack(clipBehavior: Clip.none, children: [
+            child: Stack(clipBehavior: Clip.none, children: [
               Image.asset(Images.notification,
                   height: Dimensions.iconSizeDefault,
                   width: Dimensions.iconSizeDefault,
@@ -47,34 +47,30 @@ class CartWidgetHomePage extends StatelessWidget {
             ]),
           );
         }),
-        Padding(
-          padding: const EdgeInsets.only(right: 12.0),
-          child: IconButton(
-            onPressed: () => Navigator.push(
-                context, MaterialPageRoute(builder: (_) => const CartScreen())),
-            icon: Stack(clipBehavior: Clip.none, children: [
-              Image.asset(Images.cartArrowDownImage,
-                  height: Dimensions.iconSizeDefault,
-                  width: Dimensions.iconSizeDefault,
-                  color: ColorResources.getPrimary(context)),
-              Positioned(
-                top: -4,
-                right: -4,
-                child:
-                    Consumer<CartController>(builder: (context, cart, child) {
-                  return CircleAvatar(
-                    radius: 7,
-                    backgroundColor: ColorResources.red,
-                    child: Text(cart.cartList.length.toString(),
-                        style: titilliumSemiBold.copyWith(
-                          color: ColorResources.white,
-                          fontSize: Dimensions.fontSizeExtraSmall,
-                        )),
-                  );
-                }),
-              ),
-            ]),
-          ),
+        IconButton(
+          onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CartScreen())),
+          icon: Stack(clipBehavior: Clip.none, children: [
+            Image.asset(Images.cartArrowDownImage,
+                height: Dimensions.iconSizeDefault,
+                width: Dimensions.iconSizeDefault,
+                color: ColorResources.getPrimary(context)),
+            Positioned(
+              top: -4,
+              right: -4,
+              child:
+              Consumer<CartController>(builder: (context, cart, child) {
+                return CircleAvatar(
+                  radius: 7,
+                  backgroundColor: ColorResources.red,
+                  child: Text(cart.cartList.length.toString(),
+                      style: titilliumSemiBold.copyWith(
+                        color: ColorResources.white,
+                        fontSize: Dimensions.fontSizeExtraSmall,
+                      )),
+                );
+              }),
+            ),
+          ]),
         ),
         InkWell(
           onTap: () => facebook("https://www.instagram.com/boutique_ozcan"),
