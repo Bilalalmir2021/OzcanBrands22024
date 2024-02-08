@@ -105,7 +105,7 @@ class SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: const Color.fromRGBO(55, 30, 36, 1),
       key: _globalKey,
       body: Provider.of<SplashProvider>(context).hasConnection ?
       Center(child: Column(mainAxisSize: MainAxisSize.min, children: [
