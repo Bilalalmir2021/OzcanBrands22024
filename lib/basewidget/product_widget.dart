@@ -136,58 +136,6 @@ class ProductWidget extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          IconButton(
-                              onPressed: () {
-                                Variation? variation;
-                                String? variantName = (productModel.colors != null && productModel.colors!.isNotEmpty) ? productModel.colors![productModel.id!].name : null;
-                                List<String> variationList = [];
-                                for(int index=0; index < productModel.choiceOptions!.length; index++) {
-                                  variationList.add(productModel.choiceOptions![index].options![0].trim());
-
-                                }
-                                String variationType = '';
-                                if(variantName != null) {
-                                  variationType = variantName;
-                                  for (var variation in variationList) {
-                                    variationType = '$variationType-$variation';
-                                  }
-                                }else {
-
-                                  bool isFirst = true;
-                                  for (var variation in variationList) {
-                                    if(isFirst) {
-                                      variationType = '$variationType$variation';
-                                      isFirst = false;
-                                    }else {
-                                      variationType = '$variationType-$variation';
-                                    }
-                                  }
-                                }
-                                double? price = productModel.unitPrice;
-                                int? stock = productModel.currentStock;
-                                variationType = variationType.replaceAll(' ', '');
-                                for(Variation variation in productModel.variation!) {
-                                  if(variation.type == variationType) {
-                                    price = variation.price;
-                                    variation = variation;
-                                    stock = variation.qty;
-                                    break;
-                                  }
-                                }
-
-                                CartModelBody cart = CartModelBody(
-                                  productId: productModel.id,
-                                  variant: (productModel.colors != null && productModel.colors!.isNotEmpty) ? productModel.colors![0].name : '',
-                                  color: (productModel.colors != null && productModel.colors!.isNotEmpty) ? productModel.colors![0].code : '',
-                                  variation : variation,
-                                  quantity: 1,
-                                );
-                                Provider.of<CartController>(context, listen: false).addToCartAPI(
-                                  cart, context, productModel.choiceOptions!,
-                                  Provider.of<ProductDetailsProvider>(context, listen: false).variationIndex,
-                                );
-                              },
-                              icon: const Icon(Icons.shopping_cart_checkout)),
                           Text(
                               PriceConverter.convertPrice(
                                   context, productModel.unitPrice,

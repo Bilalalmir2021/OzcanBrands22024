@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sixvalley_ecommerce/features/cart/controllers/cart_controller.dart';
+import 'package:flutter_sixvalley_ecommerce/features/category/view/all_category_screen.dart';
 import 'package:flutter_sixvalley_ecommerce/features/notification/provider/notification_provider.dart';
 import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
 import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
@@ -17,6 +18,16 @@ class CartWidgetHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
+        IconButton(
+          onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const AllCategoryScreen())),
+          icon: Stack(clipBehavior: Clip.none, children: [
+            Image.asset(Images.category,
+                height: Dimensions.iconSizeDefault,
+                width: Dimensions.iconSizeDefault,
+                color: ColorResources.getPrimary(context)),
+
+          ]),
+        ),
         Consumer<NotificationProvider>(
             builder: (context, notificationProvider, _) {
           return InkWell(
@@ -72,6 +83,7 @@ class CartWidgetHomePage extends StatelessWidget {
             ),
           ]),
         ),
+
         InkWell(
           onTap: () => facebook("https://www.instagram.com/boutique_ozcan"),
           child: Image.asset(

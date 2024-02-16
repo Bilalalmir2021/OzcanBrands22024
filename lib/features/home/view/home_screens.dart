@@ -175,6 +175,19 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(height: Dimensions.paddingSizeSmall),
                    const CategoryView(isHomePage: true),
 
+                  // Brand
+                  Provider.of<SplashProvider>(context, listen: false).configModel!.brandSetting == "1"?
+                  Consumer<BrandController>(
+                      builder: (context, brandController,_) {
+                        return (brandController.brandList != null && brandController.brandList!.isNotEmpty)?
+                        TitleRow(title: getTranslated('brand', context),
+                            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const AllBrandScreen()))): const SizedBox();
+                      }
+                  ):const SizedBox(),
+                  SizedBox(height: Provider.of<SplashProvider>(context, listen: false).configModel!.brandSetting == "1"?Dimensions.paddingSizeSmall: 0),
+                  Provider.of<SplashProvider>(context, listen: false).configModel!.brandSetting == "1"?
+                  const BrandView(isHomePage: true) : const SizedBox(),
+
 
 
                   // Featured Deal
@@ -264,19 +277,6 @@ class _HomePageState extends State<HomePage> {
                       child: LatestProductView()),
 
 
-
-                  // Brand
-                  Provider.of<SplashProvider>(context, listen: false).configModel!.brandSetting == "1"?
-                  Consumer<BrandController>(
-                    builder: (context, brandController,_) {
-                      return (brandController.brandList != null && brandController.brandList!.isNotEmpty)?
-                      TitleRow(title: getTranslated('brand', context),
-                          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const AllBrandScreen()))): const SizedBox();
-                    }
-                  ):const SizedBox(),
-                  SizedBox(height: Provider.of<SplashProvider>(context, listen: false).configModel!.brandSetting == "1"?Dimensions.paddingSizeSmall: 0),
-                  Provider.of<SplashProvider>(context, listen: false).configModel!.brandSetting == "1"?
-                  const BrandView(isHomePage: true) : const SizedBox(),
 
 
 

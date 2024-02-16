@@ -81,7 +81,7 @@ class ShippingMethodBottomSheetState extends State<ShippingMethodBottomSheet> {
                                       const Icon(Icons.check_circle, color: Colors.green,): Icon(Icons.circle_outlined, color: Theme.of(context).hintColor,),
                                       const SizedBox(width: Dimensions.paddingSizeSmall),
                                       Expanded(
-                                        child: Text('${order.shippingList![widget.sellerIndex].shippingMethodList![index].title} (Duration ${order.shippingList![widget.sellerIndex].shippingMethodList![index].duration})'),),
+                                        child: Text('${order.shippingList![widget.sellerIndex].shippingMethodList![index].title} (${order.shippingList![widget.sellerIndex].shippingMethodList![index].duration})'),),
                                       const SizedBox(width: Dimensions.paddingSizeSmall),
 
                                       Text(' ${PriceConverter.convertPrice(context, order.shippingList![widget.sellerIndex].shippingMethodList![index].cost)}',

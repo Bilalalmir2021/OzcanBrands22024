@@ -1,9 +1,9 @@
 import 'package:flutter_sixvalley_ecommerce/localization/model/language_model.dart';
 import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
 class AppConstants {
-  static const String appName = 'Ozcan Boutique';
-  static const String slogan = 'E-Commerce Marketplace';
-  static const String appVersion = 'Ozcan Boutique | ©2024';
+  static const String appName = 'Ozcan Brands';
+  static const String slogan = '';
+  static const String appVersion = 'Ozcan Brands | ©2024';
   static const String baseUrl = 'https://boutique.ozcanbrand.com';
   static const String userId = 'userId';
   static const String name = 'name';

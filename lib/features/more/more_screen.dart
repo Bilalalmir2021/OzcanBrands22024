@@ -102,8 +102,8 @@ class _MoreScreenState extends State<MoreScreen> {
                               navigateTo: const GuestTrackOrderScreen()),
 
                         if(Provider.of<AuthController>(context, listen: false).isLoggedIn())
-                          TitleButton(image: Images.user, title: getTranslated('profile', context),
-                              navigateTo: const ProfileScreen()),
+                            TitleButton(image: Images.user, title: getTranslated('profile', context),
+                                navigateTo: const ProfileScreen()),
 
                         TitleButton(image: Images.address, title: getTranslated('addresses', context),
                             navigateTo: const AddressListScreen()),
