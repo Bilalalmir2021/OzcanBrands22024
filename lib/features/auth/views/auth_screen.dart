@@ -9,6 +9,10 @@ import 'package:flutter_sixvalley_ecommerce/features/auth/widgets/sign_in_widget
 import 'package:flutter_sixvalley_ecommerce/features/auth/widgets/sign_up_widget.dart';
 import 'package:provider/provider.dart';
 
+import '../../../basewidget/not_logged_in_bottom_sheet.dart';
+import '../../chat/view/chat_screen.dart';
+import '../../product/provider/product_details_provider.dart';
+
 class AuthScreen extends StatefulWidget{
   const AuthScreen({super.key});
 
@@ -40,6 +44,7 @@ class _AuthScreenState extends State<AuthScreen> with SingleTickerProviderStateM
         }
       },
       child: Scaffold(
+
         body: Consumer<AuthController>(
           builder: (context, authProvider,_) {
             return SingleChildScrollView(

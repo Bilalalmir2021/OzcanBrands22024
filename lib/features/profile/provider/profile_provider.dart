@@ -11,6 +11,9 @@ import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dar
 import 'package:flutter_sixvalley_ecommerce/main.dart';
 import 'package:flutter_sixvalley_ecommerce/basewidget/show_custom_snakbar.dart';
 import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../../../utill/app_constants.dart';
 
 
 class ProfileProvider extends ChangeNotifier {
@@ -27,6 +30,10 @@ class ProfileProvider extends ChangeNotifier {
   UserInfoModel? get userInfoModel => _userInfoModel;
   bool get isLoading => _isLoading;
 
+  SharedPreferences? sharedPreferences;
+
+
+  String? langCode ;
 
 
 

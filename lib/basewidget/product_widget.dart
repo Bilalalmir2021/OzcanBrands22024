@@ -74,7 +74,7 @@ class ProductWidget extends StatelessWidget {
                           '${Provider.of<SplashProvider>(context, listen: false).baseUrls!.productThumbnailUrl}/${productModel.thumbnail}',
                       height: MediaQuery.of(context).size.width / 2.45,
                       width: MediaQuery.of(context).size.width,
-                      fit: BoxFit.cover,
+                      fit: BoxFit.contain,
                     ))),
 
             // Product Details
@@ -93,20 +93,6 @@ class ProductWidget extends StatelessWidget {
                     // Padding(padding:  EdgeInsets.zero,
                     //   child: Text(getTranslated('out_of_stock', context)??'', style: textRegular.copyWith(color: const Color(0xFFF36A6A)))),
 
-                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                      const Icon(Icons.star_rate_rounded,
-                          color: Colors.orange, size: 20),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 2.0),
-                        child: Text(double.parse(ratting).toStringAsFixed(1),
-                            style: textRegular.copyWith(
-                                fontSize: Dimensions.fontSizeDefault)),
-                      ),
-                      Text('(${productModel.reviewCount.toString()})',
-                          style: textRegular.copyWith(
-                              fontSize: Dimensions.fontSizeSmall,
-                              color: Theme.of(context).hintColor))
-                    ]),
 
                     Padding(
                         padding: const EdgeInsets.symmetric(vertical: 5.0),

@@ -232,11 +232,9 @@ class ProfileScreenState extends State<ProfileScreen> {
 
 
                         CustomTextField(
-                            isEnabled: false,
                           labelText: getTranslated('email', context),
                             inputType: TextInputType.emailAddress,
                           focusNode: _emailFocus,
-                          readOnly : true,
                           nextFocus: _phoneFocus,
                           hintText: profile.userInfoModel!.email ?? '',
                           controller: _emailController),
@@ -244,7 +242,6 @@ class ProfileScreenState extends State<ProfileScreen> {
 
 
                         CustomTextField(
-                          isEnabled: false,
                           labelText: getTranslated('phone', context),
                           inputType: TextInputType.phone,
                           focusNode: _phoneFocus,

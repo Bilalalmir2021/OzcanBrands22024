@@ -56,6 +56,15 @@ class _SearchScreenState extends State<SearchScreen> {
                         builder: (context, searchProvider, child) {
                           return Padding( padding: const EdgeInsets.symmetric(horizontal:  Dimensions.paddingSizeLarge),
                             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                              
+                              if(searchProvider.searchedProduct == null)
+                                const Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 100),
+                                  child: Center(child: Text("هذا المنتج غير متوافر",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),),
+                                ),
+                              
+                              
+                              
                               if(searchProvider.historyList.isNotEmpty)
                                 Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                                   Expanded(child: Text(getTranslated('search_history', context)!, style: textMedium.copyWith(fontSize : Dimensions.fontSizeLarge))),

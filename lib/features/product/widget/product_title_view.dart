@@ -83,6 +83,45 @@ class ProductTitleView extends StatelessWidget {
               ),
             ),
 
+            productModel!.choiceOptions!=null && productModel!.choiceOptions!.isNotEmpty?
+            ListView.builder(
+              shrinkWrap: true,
+              itemCount: productModel!.choiceOptions!.length,
+              physics: const NeverScrollableScrollPhysics(),
+              itemBuilder: (context, index) {
+                return Row(crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text('${getTranslated('available', context)} ${productModel!.choiceOptions![index].title} :',
+                          style: titilliumRegular.copyWith(fontSize: Dimensions.fontSizeLarge)),
+                      const SizedBox(width: Dimensions.paddingSizeExtraSmall),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(2.0),
+                          child: SizedBox(height: 40,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              shrinkWrap: true,
+                              itemCount: productModel!.choiceOptions![index].options!.length,
+                              itemBuilder: (context, i) {
+                                return Center(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(right: Dimensions.paddingSizeDefault),
+                                    child: Text(productModel!.choiceOptions![index].options![i].trim(), maxLines: 1,
+                                        overflow: TextOverflow.ellipsis, style: textRegular.copyWith(
+                                            fontSize: Dimensions.fontSizeLarge,color: Provider.of<ThemeProvider>(context, listen: false).darkTheme? Colors.white : Theme.of(context).primaryColor
+                                        )),
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
+                        ),
+                      ),
+                    ]);
+              },
+            ):const SizedBox(),
+
 
             Padding(padding: const EdgeInsets.only(bottom: Dimensions.paddingSizeDefault),
               child: Row(children: [
@@ -157,44 +196,7 @@ class ProductTitleView extends StatelessWidget {
 
 
 
-            productModel!.choiceOptions!=null && productModel!.choiceOptions!.isNotEmpty?
-            ListView.builder(
-              shrinkWrap: true,
-              itemCount: productModel!.choiceOptions!.length,
-              physics: const NeverScrollableScrollPhysics(),
-              itemBuilder: (context, index) {
-                return Row(crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                  Text('${getTranslated('available', context)} ${productModel!.choiceOptions![index].title} :',
-                      style: titilliumRegular.copyWith(fontSize: Dimensions.fontSizeLarge)),
-                  const SizedBox(width: Dimensions.paddingSizeExtraSmall),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(2.0),
-                      child: SizedBox(height: 40,
-                        child: ListView.builder(
-                         scrollDirection: Axis.horizontal,
-                          shrinkWrap: true,
-                          itemCount: productModel!.choiceOptions![index].options!.length,
-                          itemBuilder: (context, i) {
-                            return Center(
-                              child: Padding(
-                                padding: const EdgeInsets.only(right: Dimensions.paddingSizeDefault),
-                                child: Text(productModel!.choiceOptions![index].options![i].trim(), maxLines: 1,
-                                    overflow: TextOverflow.ellipsis, style: textRegular.copyWith(
-                                      fontSize: Dimensions.fontSizeLarge,color: Provider.of<ThemeProvider>(context, listen: false).darkTheme? Colors.white : Theme.of(context).primaryColor
-                                     )),
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                    ),
-                  ),
-                ]);
-              },
-            ):const SizedBox(),
+
 
           ]);
         },

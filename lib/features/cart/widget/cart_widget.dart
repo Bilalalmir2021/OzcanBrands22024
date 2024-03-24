@@ -54,7 +54,9 @@ class CartWidget extends StatelessWidget {
                         pageBuilder: (context, anim1, anim2) => ProductDetails(productId: cartModel!.productId, slug: cartModel!.slug,),
                       ));
                     },
-                    child: Container(decoration: BoxDecoration(
+                    child: Container(
+                        height: 70, width: 70,
+                        decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(Dimensions.paddingSizeExtraSmall),
                         border: Border.all(color: Theme.of(context).primaryColor.withOpacity(.10),width: 0.5)),
                         child: ClipRRect(borderRadius: BorderRadius.circular(Dimensions.paddingSizeExtraSmall),

@@ -76,20 +76,20 @@ class SellerView extends StatelessWidget {
                         ),
 
 
-                        InkWell(onTap: () {
-                            if(!Provider.of<AuthController>(context, listen: false).isLoggedIn()) {
-                              showModalBottomSheet(context: context, builder: (_) => const NotLoggedInBottomSheet());
-                            }else if(seller.sellerModel != null) {
-                              Navigator.push(context, MaterialPageRoute(builder: (_) => ChatScreen(
-                                  id: seller.sellerModel!.seller!.id,
-                                  name: seller.sellerModel!.seller!.shop!.name)));
-                            }
-                          },
-                          child: Container(padding: const EdgeInsets.all(Dimensions.paddingSizeExtraSmall),decoration: BoxDecoration(
-                            color: Theme.of(context).canvasColor,
-                            borderRadius: BorderRadius.circular(Dimensions.paddingSizeExtraSmall)
-                          ),
-                              child: Image.asset(Images.chatImage, height: Dimensions.iconSizeDefault))),
+                        // InkWell(onTap: () {
+                        //     if(!Provider.of<AuthController>(context, listen: false).isLoggedIn()) {
+                        //       showModalBottomSheet(context: context, builder: (_) => const NotLoggedInBottomSheet());
+                        //     }else if(seller.sellerModel != null) {
+                        //       Navigator.push(context, MaterialPageRoute(builder: (_) => ChatScreen(
+                        //           id: seller.sellerModel!.seller!.id,
+                        //           name: seller.sellerModel!.seller!.shop!.name)));
+                        //     }
+                        //   },
+                        //   child: Container(padding: const EdgeInsets.all(Dimensions.paddingSizeExtraSmall),decoration: BoxDecoration(
+                        //     color: Theme.of(context).canvasColor,
+                        //     borderRadius: BorderRadius.circular(Dimensions.paddingSizeExtraSmall)
+                        //   ),
+                        //       child: Image.asset(Images.chatImage, height: Dimensions.iconSizeDefault))),
                       ]),
                       const SizedBox(height: Dimensions.paddingSizeExtraSmall,),
 

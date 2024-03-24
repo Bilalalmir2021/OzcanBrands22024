@@ -62,7 +62,7 @@ class LatestProductWidget extends StatelessWidget {
 
 
                       Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                        RatingBar(rating: double.parse(ratting), size: 18),
+                        // RatingBar(rating: double.parse(ratting), size: 18),
 
 
                         Text('(${productModel.reviewCount.toString()})', style: textRegular.copyWith(

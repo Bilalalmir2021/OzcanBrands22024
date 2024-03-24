@@ -22,6 +22,8 @@ import 'package:flutter_sixvalley_ecommerce/features/checkout/widget/shipping_me
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:provider/provider.dart';
 
+import '../../../basewidget/amount_widget.dart';
+
 class CartScreen extends StatefulWidget {
   final bool fromCheckout;
   final int sellerId;
@@ -152,6 +154,7 @@ class CartScreenState extends State<CartScreen> {
                       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
 
                         Row(children: [
+
                             Text('${getTranslated('total_price', context)} ', style: titilliumSemiBold.copyWith(
                                 fontSize: Dimensions.fontSizeLarge,
                                 color: Provider.of<ThemeProvider>(context, listen: false).darkTheme? Theme.of(context).hintColor : Theme.of(context).primaryColor)),

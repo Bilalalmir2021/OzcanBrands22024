@@ -30,6 +30,23 @@ class MoreHorizontalSection extends StatelessWidget {
               child: ListView(scrollDirection:Axis.horizontal,
                   shrinkWrap: true,
                   physics: const BouncingScrollPhysics(), children: [
+                    if(!isGuestMode)
+                      SquareButton(image: Images.shoppingImage, title: getTranslated('orders', context),
+                        navigateTo: const OrderScreen(),count: 1,hasCount: false,isWallet: true,subTitle: 'orders',
+                        balance: profileProvider.userInfoModel?.totalOrder??0, isLoyalty: true,
+                      ),
+
+                    SquareButton(image: Images.wishlist, title: getTranslated('wishlist', context),
+                      navigateTo: const WishListScreen(),
+                      count: Provider.of<AuthController>(context, listen: false).isLoggedIn() &&
+                          Provider.of<WishListProvider>(context, listen: false).wishList != null &&
+                          Provider.of<WishListProvider>(context, listen: false).wishList!.isNotEmpty ?
+                      Provider.of<WishListProvider>(context, listen: false).wishList!.length : 0, hasCount: false,),
+
+                    SquareButton(image: Images.cartImage, title: getTranslated('cart', context),
+                      navigateTo: const CartScreen(),
+                      count: Provider.of<CartController>(context,listen: false).cartList.length, hasCount: true,),
+
                    if(Provider.of<SplashProvider>(context, listen: false).configModel!.activeTheme != "theme_fashion")
                     SquareButton(image: Images.offerIcon, title: getTranslated('offers', context),
                       navigateTo: const OffersScreen(),count: 0,hasCount: false,),
@@ -47,22 +64,9 @@ class MoreHorizontalSection extends StatelessWidget {
                       ),
 
 
-                    if(!isGuestMode)
-                    SquareButton(image: Images.shoppingImage, title: getTranslated('orders', context),
-                      navigateTo: const OrderScreen(),count: 1,hasCount: false,isWallet: true,subTitle: 'orders',
-                      balance: profileProvider.userInfoModel?.totalOrder??0, isLoyalty: true,
-                    ),
 
-                    SquareButton(image: Images.cartImage, title: getTranslated('cart', context),
-                      navigateTo: const CartScreen(),
-                      count: Provider.of<CartController>(context,listen: false).cartList.length, hasCount: true,),
 
-                    SquareButton(image: Images.wishlist, title: getTranslated('wishlist', context),
-                      navigateTo: const WishListScreen(),
-                      count: Provider.of<AuthController>(context, listen: false).isLoggedIn() &&
-                          Provider.of<WishListProvider>(context, listen: false).wishList != null &&
-                          Provider.of<WishListProvider>(context, listen: false).wishList!.isNotEmpty ?
-                      Provider.of<WishListProvider>(context, listen: false).wishList!.length : 0, hasCount: false,),
+
                   ]),
             ),
           ),

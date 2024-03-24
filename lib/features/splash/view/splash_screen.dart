@@ -110,7 +110,7 @@ class SplashScreenState extends State<SplashScreen> {
       body: Provider.of<SplashProvider>(context).hasConnection ?
       Center(child: Column(mainAxisSize: MainAxisSize.min, children: [
         SizedBox(width: 300, child: Image.asset(Images.icon, width: 300.0)),
-        Text(AppConstants.appName,style: textRegular.copyWith(fontSize: Dimensions.fontSizeOverLarge, color: Colors.white)),
+        Text(AppConstants.appName,style: textRegular.copyWith(fontSize: 35, color: Colors.white)),
         Padding(padding: const EdgeInsets.only(top: Dimensions.paddingSizeSmall),
             child: Text(AppConstants.slogan,style: textRegular.copyWith(fontSize: Dimensions.fontSizeDefault, color: Colors.white)))]),
       ) : const NoInternetOrDataScreen(isNoInternet: true, child: SplashScreen()),

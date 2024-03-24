@@ -94,7 +94,7 @@ class AddFundDialogue extends StatelessWidget {
                               buttonText: getTranslated('add_fund', context)!,
                               onTap: () {
                                 if(digitalPaymentProvider.selectedDigitalPaymentMethodName.isEmpty){
-                                  digitalPaymentProvider.setDigitalPaymentMethodName(0,configProvider.configModel!.paymentMethods![0].keyName!);
+                                  digitalPaymentProvider.setDigitalPaymentMethodName(0,configProvider.configModel!.paymentMethods!.first.keyName!);
                                 }
                                 if(inputAmountController.text.trim().isEmpty){
                                   showCustomSnackBar('${getTranslated('please_input_amount', context)}', context);

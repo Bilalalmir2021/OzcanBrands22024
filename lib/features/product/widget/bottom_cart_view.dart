@@ -97,7 +97,6 @@ class _BottomCartViewState extends State<BottomCartView> {
             )
           ]),
         )),
-
         Expanded(flex: 11, child: InkWell(
           onTap: () {
             if(vacationIsOn || temporaryClose ){
@@ -125,6 +124,7 @@ class _BottomCartViewState extends State<BottomCartView> {
             ),
           ),
         )),
+
       ]),
     );
   }

@@ -5,6 +5,8 @@ import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
 import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
 import 'package:provider/provider.dart';
 
+import '../../category/view/all_category_screen.dart';
+
 class SearchWidgetHomePage extends StatelessWidget {
   const SearchWidgetHomePage({super.key});
 
@@ -42,19 +44,45 @@ class SearchWidgetHomePage extends StatelessWidget {
                 child: Text(getTranslated('search_hint', context) ?? '',
                     style: textRegular.copyWith(
                         color: Theme.of(context).hintColor))),
-            Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                  color: Theme.of(context).primaryColor,
-                  borderRadius: const BorderRadius.all(
-                      Radius.circular(Dimensions.paddingSizeExtraSmall))),
-              child: Icon(Icons.search,
-                  color: Provider.of<ThemeProvider>(context, listen: false)
-                          .darkTheme
-                      ? Colors.white
-                      : Theme.of(context).cardColor,
-                  size: Dimensions.iconSizeSmall),
+            Row(
+              children: [
+                Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                      color: Theme.of(context).primaryColor,
+                      borderRadius: const BorderRadius.all(
+                          Radius.circular(Dimensions.paddingSizeExtraSmall))),
+                  child: Icon(Icons.search,
+                      color: Provider.of<ThemeProvider>(context, listen: false)
+                              .darkTheme
+                          ? Colors.white
+                          : Theme.of(context).cardColor,
+                      size: Dimensions.iconSizeSmall),
+                ),
+                const SizedBox(width: 5,),
+                InkWell(
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) => const AllCategoryScreen())),
+                  child: Container(
+                    width: 40,
+                    height: 40,
+                    decoration: BoxDecoration(
+                        color: Theme.of(context).primaryColor,
+                        borderRadius: const BorderRadius.all(
+                            Radius.circular(Dimensions.paddingSizeExtraSmall))),
+                    child: Icon(Icons.menu,
+                        color:
+                            Provider.of<ThemeProvider>(context, listen: false)
+                                    .darkTheme
+                                ? Colors.white
+                                : Theme.of(context).cardColor,
+                        size: Dimensions.iconSizeSmall),
+                  ),
+                )
+              ],
             ),
           ]),
         ),

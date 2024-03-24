@@ -1,4 +1,5 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/cart_model.dart';
 import 'package:flutter_sixvalley_ecommerce/features/product/domain/model/product_details_model.dart' as pd;
@@ -252,9 +253,14 @@ class CartBottomSheetState extends State<CartBottomSheet> {
                                 scrollDirection: Axis.horizontal,
                                 itemCount: widget.product!.choiceOptions![index].options!.length,
                                 itemBuilder: (ctx, i) {
+
                                   return Padding(padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
                                     child: InkWell(
-                                      onTap: () => Provider.of<ProductDetailsProvider>(context, listen: false).setCartVariationIndex(widget.product!.minimumOrderQty, index, i, context),
+                                      onTap: () {
+                                          Provider.of<ProductDetailsProvider>(context, listen: false).setCartVariationIndex(widget.product!.minimumOrderQty, index, i, context);
+
+
+                                      },
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(5),
@@ -267,12 +273,18 @@ class CartBottomSheetState extends State<CartBottomSheet> {
                                           child: Padding(
                                             padding: const EdgeInsets.symmetric(horizontal : Dimensions.paddingSizeDefault),
                                             child: Center(
-                                              child: Text(widget.product!.choiceOptions![index].options![i].trim(), maxLines: 1,
-                                                  overflow: TextOverflow.ellipsis, style: titilliumRegular.copyWith(
-                                                fontSize: Dimensions.fontSizeDefault,
-                                                color: (details.variationIndex![index] != i && !Provider.of<ThemeProvider>(context, listen: false).darkTheme) ?
-                                                Theme.of(context).primaryColor :  Colors.white,
-                                              )),
+                                              child: Stack(
+                                                children: [
+                                                    if(stock! < widget.product!.minimumOrderQty!)
+                                                      const Icon(CupertinoIcons.xmark),
+                                                  Text(widget.product!.choiceOptions![index].options![i].trim(), maxLines: 1,
+                                                      overflow: TextOverflow.ellipsis, style: titilliumRegular.copyWith(
+                                                    fontSize: Dimensions.fontSizeDefault,
+                                                    color: (details.variationIndex![index] != i && !Provider.of<ThemeProvider>(context, listen: false).darkTheme) ?
+                                                    Theme.of(context).primaryColor :  Colors.white,
+                                                  )),
+                                                ],
+                                              ),
                                             ),
                                           ),
                                         ),

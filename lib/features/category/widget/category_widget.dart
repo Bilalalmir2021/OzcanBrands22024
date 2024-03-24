@@ -25,7 +25,7 @@ class CategoryWidget extends StatelessWidget {
           child: ClipRRect(borderRadius: BorderRadius.circular(Dimensions.paddingSizeSmall),
             child: Padding(
               padding: const EdgeInsets.all(4.0),
-              child: CustomImage(image: '${Provider.of<SplashProvider>(context,listen: false).baseUrls!.categoryImageUrl}''/${category.icon}',
+              child: CustomImage(isShow: false,image: '${Provider.of<SplashProvider>(context,listen: false).baseUrls!.categoryImageUrl}''/${category.icon}',
                 fit: BoxFit.contain,alignment: Alignment.center,),
             ))),
 

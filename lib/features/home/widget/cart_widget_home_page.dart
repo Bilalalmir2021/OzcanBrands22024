@@ -18,16 +18,7 @@ class CartWidgetHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        IconButton(
-          onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const AllCategoryScreen())),
-          icon: Stack(clipBehavior: Clip.none, children: [
-            Image.asset(Images.category,
-                height: Dimensions.iconSizeDefault,
-                width: Dimensions.iconSizeDefault,
-                color: ColorResources.getPrimary(context)),
 
-          ]),
-        ),
         Consumer<NotificationProvider>(
             builder: (context, notificationProvider, _) {
           return InkWell(

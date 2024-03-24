@@ -88,6 +88,7 @@ class BannersView extends StatelessWidget {
                                                             .primaryColor
                                                             .withOpacity(.05)),
                                                 child: CustomImage(
+                                                  isShow: false,
                                                   image:
                                                       '${Provider.of<SplashProvider>(context, listen: false).baseUrls!.bannerImageUrl}'
                                                       '/${bannerProvider.mainBannerList![index].photo}',

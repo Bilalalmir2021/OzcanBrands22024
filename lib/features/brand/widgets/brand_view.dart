@@ -98,6 +98,7 @@ class BrandView extends StatelessWidget {
                                                 const BorderRadius.all(
                                                     Radius.circular(5)),
                                             child: CustomImage(
+                                              isShow: false,
                                               image:
                                                   '${Provider.of<SplashProvider>(context, listen: false).baseUrls!.brandImageUrl!}/${brandProvider.brandList![index].image!}',
                                               alignment: Alignment.center,
