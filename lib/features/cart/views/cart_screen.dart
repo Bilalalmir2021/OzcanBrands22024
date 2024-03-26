@@ -352,7 +352,7 @@ class CartScreenState extends State<CartScreen> {
                                       Text((cart.shippingList == null || cart.shippingList![index].shippingMethodList == null || cart.chosenShippingList.isEmpty || cart.shippingList![index].shippingIndex == -1) ? '':
                                       '${getTranslated('shipping_time', context)??''} : ',style: textRegular,),
                                     Text((cart.shippingList == null || cart.shippingList![index].shippingMethodList == null || cart.chosenShippingList.isEmpty || cart.shippingList![index].shippingIndex == -1) ? ''
-                                        : '${cart.shippingList![index].shippingMethodList![cart.shippingList![index].shippingIndex!].duration.toString()} ${getTranslated('days', context)}',
+                                        : ' ${cart.shippingList![index].shippingMethodList![cart.shippingList![index].shippingIndex!].duration.toString()} ${getTranslated('days', context)}',
                                         style: textBold.copyWith(),
                                         maxLines: 1, overflow: TextOverflow.ellipsis,textAlign: TextAlign.end)
                                     ],

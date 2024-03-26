@@ -57,7 +57,7 @@ class TitleRow extends StatelessWidget {
         child: Align(alignment: Alignment.center,
           child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
 
-              Padding(padding: const EdgeInsets.only(left: Dimensions.homePagePadding),
+              Padding(padding: const EdgeInsetsDirectional.fromSTEB(Dimensions.homePagePadding, 0, 0, 0),
                 child: Text(title!, style: titleHeader.copyWith(fontSize: MediaQuery.of(Get.context!).size.width * 0.044,
                     color: titleColor ?? (isFlash? Colors.white: Theme.of(context).textTheme.bodyLarge?.color))),),
 

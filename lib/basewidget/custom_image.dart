@@ -16,7 +16,7 @@ class CustomImage extends StatelessWidget {
       required this.image,
       this.height,
       this.width,
-      this.fit = BoxFit.cover,
+      this.fit = BoxFit.contain,
       this.placeholder = Images.placeholder,
       this.alignment,
       this.isShow = true});

@@ -49,7 +49,9 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
             const SizedBox(width: Dimensions.marginSizeDefault),
 
             ClipRRect(borderRadius: BorderRadius.circular(Dimensions.paddingSizeExtraSmall),
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(Dimensions.paddingSizeExtraSmall),
+                child: Container(
+                 width: 80, height: 80,
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(Dimensions.paddingSizeExtraSmall),
                     border: Border.all(color: Theme.of(context).primaryColor.withOpacity(.125))),
                     child: CustomImage(image: '${Provider.of<SplashProvider>(context, listen: false).
                     baseUrls!.productThumbnailUrl}/${widget.orderDetailsModel.productDetails?.thumbnail}', width: 80, height: 80))),

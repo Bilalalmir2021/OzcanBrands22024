@@ -163,6 +163,10 @@
   "support_ticket": "الدعم الفني",
   "write_your_subject": "اكتب موضوعك",
   "select_your_priority": "حدد أولويتك",
+  "priority": "أولوية",
+  "shipping_time": "وقت الشحن",
+  "days": "ايام",
+
   "issue_description": "اكتب مشكلتك بالتفصيل",
   "submit": "إرسال",
   "all": "الكل",

@@ -38,7 +38,7 @@ class MessageBubble extends StatelessWidget {
 
 
               Flexible(child: Container(
-                margin: isMe ?  const EdgeInsets.fromLTRB(70, 5, 10, 5) : const EdgeInsets.fromLTRB(10, 5, 70, 5),
+                margin:  const EdgeInsets.symmetric(horizontal: 10),
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(

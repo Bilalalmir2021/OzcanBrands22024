@@ -232,6 +232,7 @@ class ProfileScreenState extends State<ProfileScreen> {
 
 
                         CustomTextField(
+                          isEnabled: false,
                           labelText: getTranslated('email', context),
                             inputType: TextInputType.emailAddress,
                           focusNode: _emailFocus,

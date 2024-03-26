@@ -87,7 +87,7 @@ class BannersView extends StatelessWidget {
                                                         : Theme.of(context)
                                                             .primaryColor
                                                             .withOpacity(.05)),
-                                                child: CustomImage(
+                                                child: CustomImage(fit: BoxFit.cover,
                                                   isShow: false,
                                                   image:
                                                       '${Provider.of<SplashProvider>(context, listen: false).baseUrls!.bannerImageUrl}'

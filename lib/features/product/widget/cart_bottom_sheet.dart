@@ -258,8 +258,6 @@ class CartBottomSheetState extends State<CartBottomSheet> {
                                     child: InkWell(
                                       onTap: () {
                                           Provider.of<ProductDetailsProvider>(context, listen: false).setCartVariationIndex(widget.product!.minimumOrderQty, index, i, context);
-
-
                                       },
                                       child: Container(
                                         decoration: BoxDecoration(
@@ -273,18 +271,12 @@ class CartBottomSheetState extends State<CartBottomSheet> {
                                           child: Padding(
                                             padding: const EdgeInsets.symmetric(horizontal : Dimensions.paddingSizeDefault),
                                             child: Center(
-                                              child: Stack(
-                                                children: [
-                                                    if(stock! < widget.product!.minimumOrderQty!)
-                                                      const Icon(CupertinoIcons.xmark),
-                                                  Text(widget.product!.choiceOptions![index].options![i].trim(), maxLines: 1,
-                                                      overflow: TextOverflow.ellipsis, style: titilliumRegular.copyWith(
-                                                    fontSize: Dimensions.fontSizeDefault,
-                                                    color: (details.variationIndex![index] != i && !Provider.of<ThemeProvider>(context, listen: false).darkTheme) ?
-                                                    Theme.of(context).primaryColor :  Colors.white,
-                                                  )),
-                                                ],
-                                              ),
+                                              child: Text(widget.product!.choiceOptions![index].options![i].trim(), maxLines: 1,
+                                                  overflow: TextOverflow.ellipsis, style: titilliumRegular.copyWith(
+                                                fontSize: Dimensions.fontSizeDefault,
+                                                color: (details.variationIndex![index] != i && !Provider.of<ThemeProvider>(context, listen: false).darkTheme) ?
+                                                Theme.of(context).primaryColor :  Colors.white,
+                                              )),
                                             ),
                                           ),
                                         ),
