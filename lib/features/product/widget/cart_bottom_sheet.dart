@@ -352,22 +352,38 @@ class CartBottomSheetState extends State<CartBottomSheet> {
                     child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
 
                       Expanded(
-                        child: CustomButton(isBuy:true,radius: 6,
-                            buttonText: getTranslated(stock < widget.product!.minimumOrderQty! && widget.product!.productType == "physical" ? 'out_of_stock' : 'buy_now', context),
-                            onTap: stock < widget.product!.minimumOrderQty!  && widget.product!.productType == "physical" ? null :() {
-                              if(stock! >= widget.product!.minimumOrderQty! || widget.product!.productType == "digital") {
-                                Provider.of<CartController>(context, listen: false).addToCartAPI(
-                                  cart, context, widget.product!.choiceOptions!,
-                                  details.variationIndex,).
-                                then((value) {
-                                  if(value.response!.statusCode == 200){
-                                    _navigateToNextScreen(context);
-                                  }
+                        child: CustomButton(
+                          isBuy: true,
+                          radius: 6,
+                          buttonText: getTranslated(
+                            (stock < widget.product!.minimumOrderQty! && widget.product!.productType == "physical")
+                                ? 'out_of_stock'
+                                : 'buy_now',
+                            context,
+                          ),
+                          onTap: (stock < widget.product!.minimumOrderQty! && widget.product!.productType == "physical")
+                              ? null
+                              : () {
+                            if (stock! >= widget.product!.minimumOrderQty! || widget.product!.productType == "digital") {
+                              Provider.of<CartController>(context, listen: false).addToCartAPI(
+                                cart,
+                                context,
+                                widget.product!.choiceOptions!,
+                                details.variationIndex,
+                              ).then((value) async {
+                                if (value.response!.statusCode == 200) {
+                                  await Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const CartScreen()),
+                                  );
                                 }
-                                );
-                                Navigator.of(Get.context!).pop();
-                              }}),
+                              });
+                              Navigator.of(Get.context!).pop();
+                            }
+                          },
+                        ),
                       ),
+
                       const SizedBox(width: Dimensions.paddingSizeDefault),
                       Expanded(
                         child: CustomButton(radius: 6,
@@ -393,7 +409,7 @@ class CartBottomSheetState extends State<CartBottomSheet> {
       ],
     );
   }
-  void _navigateToNextScreen(BuildContext context) {
+  void navigateToNextScreen(BuildContext context) {
     Navigator.of(context).push(MaterialPageRoute(builder: (context) => const CartScreen()));
   }
 }

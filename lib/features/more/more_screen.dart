@@ -32,7 +32,7 @@ import 'package:flutter_sixvalley_ecommerce/features/refer_and_earn/refer_and_ea
 import 'package:flutter_sixvalley_ecommerce/features/setting/settings_screen.dart';
 import 'package:flutter_sixvalley_ecommerce/features/support/view/support_ticket_screen.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:in_app_review/in_app_review.dart';
 import 'faq_screen.dart';
 
 class MoreScreen extends StatefulWidget {
@@ -46,6 +46,7 @@ class _MoreScreenState extends State<MoreScreen> {
   late bool isGuestMode;
   String? version;
   bool singleVendor = false;
+  final InAppReview inAppReview = InAppReview.instance;
 
   @override
   void initState() {
@@ -144,7 +145,7 @@ class _MoreScreenState extends State<MoreScreen> {
                         child: Column(
                           children: [
                             if (Provider.of<AuthController>(context,
-                                listen: false)
+                                    listen: false)
                                 .isLoggedIn())
                               TitleButton(
                                   image: Images.user,
@@ -195,6 +196,30 @@ class _MoreScreenState extends State<MoreScreen> {
                                 ),
                                 isNotification: true,
                                 navigateTo: const NotificationScreen()),
+
+                            ListTile(
+                                onTap: () async {
+                                  if (await inAppReview.isAvailable()) {
+                                    inAppReview.requestReview();
+                                  }
+                                  inAppReview.openStoreListing(appStoreId: 'com.AlmirTechnology.OzcanBoutique');
+
+                                },
+                                leading: Image.asset(
+                                  Images.google,
+                                  width: 25,
+                                  height: 25,
+                                  fit: BoxFit.fill,
+                                  color: Theme.of(context)
+                                      .primaryColor
+                                      .withOpacity(.6),
+                                ),
+                                title: const Text(
+                                    "Rate On Google",
+                                    style: TextStyle(
+                                      fontFamily: 'SF-Pro-Rounded-Regular',
+                                      fontSize: Dimensions.fontSizeDefault,
+                                    ))),
                             TitleButton(
                                 image: Images.settings,
                                 title: getTranslated('settings', context),

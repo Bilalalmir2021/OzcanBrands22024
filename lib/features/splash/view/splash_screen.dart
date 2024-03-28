@@ -93,7 +93,7 @@ class SplashScreenState extends State<SplashScreen> {
             if(Provider.of<AuthController>(context, listen: false).getGuestToken() != null && Provider.of<AuthController>(context, listen: false).getGuestToken() != '1'){
               Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context) => const DashBoardScreen()));
             }else{
-              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context) => const AuthScreen()));
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context) => const DashBoardScreen()));
             }
           }
         });
