@@ -1,7 +1,7 @@
 import 'package:flutter_sixvalley_ecommerce/localization/model/language_model.dart';
 import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
 class AppConstants {
-  static const String appName = 'Ozcan Brands';
+  static const String appName = '';
   static const String slogan = '';
   static const String appVersion = 'Ozcan Brands | ©2024';
   static const String baseUrl = 'https://boutique.ozcanbrand.com';
@@ -174,7 +174,7 @@ static const String otpVerificationForDigitalProduct = '/api/v1/customer/order/d
   static const String countryCode = 'country_code';
   static const String languageCode = 'language_code';
   static const String theme = 'theme';
-  static const String topic = 'OzcanBoutique';
+  static const String topic = 'OzcanBrands';
   static const String userAddress = 'user_address';
 
   static List<LanguageModel> languages = [

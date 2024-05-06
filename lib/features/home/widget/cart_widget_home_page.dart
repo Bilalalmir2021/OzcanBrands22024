@@ -76,7 +76,7 @@ class CartWidgetHomePage extends StatelessWidget {
         ),
 
         InkWell(
-          onTap: () => facebook("https://www.instagram.com/boutique_ozcan"),
+          onTap: () => facebook("https://www.instagram.com/ozcan_brands?utm_source=qr&igsh=a3pvZW1mMmlzajdm"),
           child: Image.asset(
             Images.instagramImage,
             height: Dimensions.iconSizeDefault,
