@@ -178,7 +178,7 @@ static const String otpVerificationForDigitalProduct = '/api/v1/customer/order/d
   static const String userAddress = 'user_address';
 
   static List<LanguageModel> languages = [
-    LanguageModel(imageUrl: Images.en, languageName: 'English', countryCode: 'US', languageCode: 'en'),
     LanguageModel(imageUrl: Images.ar, languageName: 'Arabic', countryCode: 'IQ', languageCode: 'ar'),
+    LanguageModel(imageUrl: Images.en, languageName: 'English', countryCode: 'US', languageCode: 'en'),
   ];
 }

@@ -106,7 +106,9 @@ class MoreHeaderSection extends StatelessWidget {
                           if (isGuestMode)
                             Text('${getTranslated('login', context)}',
                                 style: textMedium.copyWith(
-                                    color: ColorResources.white, fontSize: 12)),
+                                    color: ColorResources.white,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold)),
                           if (!isGuestMode)
                             const SizedBox(height: Dimensions.paddingSizeSmall),
                           if (!isGuestMode)
