@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/banner/controllers/banner_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/banner/widgets/banner_shimmer.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_image.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_slider/carousel_options.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_slider/custom_slider.dart';
+import 'package:flutter_almirtech_ecommerce/features/banner/controllers/banner_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/banner/widgets/banner_shimmer.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/provider/splash_provider.dart';
+import 'package:flutter_almirtech_ecommerce/theme/provider/theme_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_image.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_slider/carousel_options.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_slider/custom_slider.dart';
 import 'package:provider/provider.dart';
 
 class BannersView extends StatelessWidget {

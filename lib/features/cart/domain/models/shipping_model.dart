@@ -1,4 +1,4 @@
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/shipping_method_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/cart/domain/models/shipping_method_model.dart';
 
 class ShippingModel{
   int? shippingIndex;

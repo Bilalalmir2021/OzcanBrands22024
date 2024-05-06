@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
 
 class CustomImage extends StatelessWidget {
   final String image;
@@ -43,11 +43,7 @@ class CustomImage extends StatelessWidget {
               width: width,
               fit: BoxFit.cover),
         ),
-        if (isShow == true)
-          Opacity(
-            opacity: 0.05,
-            child: Image.asset("assets/images/logo.png"),
-          ),
+
       ],
     );
   }

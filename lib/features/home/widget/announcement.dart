@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/domain/model/config_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/domain/model/config_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/provider/splash_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
 import 'package:provider/provider.dart';
 
 import 'marque_text.dart';

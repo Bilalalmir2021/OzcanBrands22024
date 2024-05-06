@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/provider/top_seller_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/widget/seller_card.dart';
+import 'package:flutter_almirtech_ecommerce/theme/provider/theme_provider.dart';
+import 'package:flutter_almirtech_ecommerce/features/shop/provider/top_seller_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/color_resources.dart';
+import 'package:flutter_almirtech_ecommerce/features/shop/widget/seller_card.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
 

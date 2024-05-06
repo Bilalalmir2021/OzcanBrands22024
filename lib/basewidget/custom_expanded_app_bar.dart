@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/not_loggedin_widget.dart';
+import 'package:flutter_almirtech_ecommerce/features/auth/controllers/auth_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/provider/splash_provider.dart';
+import 'package:flutter_almirtech_ecommerce/theme/provider/theme_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/color_resources.dart';
+import 'package:flutter_almirtech_ecommerce/utill/custom_themes.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/not_loggedin_widget.dart';
 import 'package:provider/provider.dart';
 
 class CustomExpandedAppBar extends StatelessWidget {

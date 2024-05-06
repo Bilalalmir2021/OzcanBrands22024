@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/chat/provider/chat_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_app_bar.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/no_internet_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/not_loggedin_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/chat/widget/chat_item_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/chat/widget/chat_type_button.dart';
-import 'package:flutter_sixvalley_ecommerce/features/chat/widget/inbox_shimmer.dart';
-import 'package:flutter_sixvalley_ecommerce/features/chat/widget/search_inbox_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/dashboard/dashboard_screen.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/features/auth/controllers/auth_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/chat/provider/chat_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_app_bar.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/no_internet_screen.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/not_loggedin_widget.dart';
+import 'package:flutter_almirtech_ecommerce/features/chat/widget/chat_item_widget.dart';
+import 'package:flutter_almirtech_ecommerce/features/chat/widget/chat_type_button.dart';
+import 'package:flutter_almirtech_ecommerce/features/chat/widget/inbox_shimmer.dart';
+import 'package:flutter_almirtech_ecommerce/features/chat/widget/search_inbox_widget.dart';
+import 'package:flutter_almirtech_ecommerce/features/dashboard/dashboard_screen.dart';
 import 'package:provider/provider.dart';
 
 

@@ -2,21 +2,21 @@ import 'dart:io';
 
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order/domain/model/review_body.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order/domain/model/order_details_model.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order/provider/order_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/provider/product_details_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_button.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_textfield.dart';
+import 'package:flutter_almirtech_ecommerce/features/order/domain/model/review_body.dart';
+import 'package:flutter_almirtech_ecommerce/features/order/domain/model/order_details_model.dart';
+import 'package:flutter_almirtech_ecommerce/helper/price_converter.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/features/auth/controllers/auth_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/order/provider/order_provider.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/provider/product_details_provider.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/provider/splash_provider.dart';
+import 'package:flutter_almirtech_ecommerce/theme/provider/theme_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/color_resources.dart';
+import 'package:flutter_almirtech_ecommerce/utill/custom_themes.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_button.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_textfield.dart';
 import 'package:provider/provider.dart';
 
 class ReviewDialog extends StatefulWidget {

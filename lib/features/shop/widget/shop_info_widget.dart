@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/provider/shop_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/animated_custom_dialog.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_image.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/guest_dialog.dart';
-import 'package:flutter_sixvalley_ecommerce/features/chat/view/chat_screen.dart';
+import 'package:flutter_almirtech_ecommerce/helper/price_converter.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/features/auth/controllers/auth_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/shop/provider/shop_provider.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/provider/splash_provider.dart';
+import 'package:flutter_almirtech_ecommerce/theme/provider/theme_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/custom_themes.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/animated_custom_dialog.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_image.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/guest_dialog.dart';
+import 'package:flutter_almirtech_ecommerce/features/chat/view/chat_screen.dart';
 import 'package:provider/provider.dart';
 
 class ShopInfoWidget extends StatelessWidget {

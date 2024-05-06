@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_app_bar.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_app_bar.dart';
 class SpecificationScreen extends StatelessWidget {
   final String specification;
   const SpecificationScreen({super.key, required this.specification});

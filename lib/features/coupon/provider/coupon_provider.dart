@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/coupon/domain/model/coupon_item_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/coupon/domain/model/coupon_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/coupon/domain/repo/coupon_repo.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/show_custom_snakbar.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/coupon/domain/model/coupon_item_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/coupon/domain/model/coupon_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/coupon/domain/repo/coupon_repo.dart';
+import 'package:flutter_almirtech_ecommerce/helper/price_converter.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/main.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/show_custom_snakbar.dart';
 
 class CouponProvider extends ChangeNotifier {
   final CouponRepo? couponRepo;

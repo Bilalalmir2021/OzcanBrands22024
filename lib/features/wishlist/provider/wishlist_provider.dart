@@ -1,13 +1,13 @@
 import 'dart:developer';
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/repo/product_details_repo.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wishlist/domain/model/wishlist_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wishlist/domain/repo/wishlist_repo.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/show_custom_snakbar.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/domain/repo/product_details_repo.dart';
+import 'package:flutter_almirtech_ecommerce/features/wishlist/domain/model/wishlist_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/wishlist/domain/repo/wishlist_repo.dart';
+import 'package:flutter_almirtech_ecommerce/helper/api_checker.dart';
+import 'package:flutter_almirtech_ecommerce/main.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/show_custom_snakbar.dart';
 
 class WishListProvider extends ChangeNotifier {
   final WishListRepo? wishListRepo;

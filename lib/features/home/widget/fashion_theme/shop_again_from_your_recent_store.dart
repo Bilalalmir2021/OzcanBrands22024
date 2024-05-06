@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/provider/product_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/home/widget/shop_again_from_recent_store_card.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/provider/product_provider.dart';
+import 'package:flutter_almirtech_ecommerce/features/home/widget/shop_again_from_recent_store_card.dart';
 import 'package:provider/provider.dart';
 
 class ShopAgainFromYourRecentStore extends StatelessWidget {

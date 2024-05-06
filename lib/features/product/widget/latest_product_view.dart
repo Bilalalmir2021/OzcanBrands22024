@@ -1,17 +1,17 @@
 
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/model/product_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/domain/model/product_model.dart';
 
-import 'package:flutter_sixvalley_ecommerce/helper/product_type.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/provider/localization_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/provider/product_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/title_row.dart';
-import 'package:flutter_sixvalley_ecommerce/features/home/shimmer/latest_product_shimmer.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/widget/latest_product_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/view/view_all_product_screen.dart';
+import 'package:flutter_almirtech_ecommerce/helper/product_type.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/localization/provider/localization_provider.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/provider/product_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/title_row.dart';
+import 'package:flutter_almirtech_ecommerce/features/home/shimmer/latest_product_shimmer.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/widget/latest_product_widget.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/view/view_all_product_screen.dart';
 import 'package:provider/provider.dart';
 
 

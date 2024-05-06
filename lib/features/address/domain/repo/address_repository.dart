@@ -1,13 +1,13 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/datasource/remote/dio/dio_client.dart';
-import 'package:flutter_sixvalley_ecommerce/data/datasource/remote/exception/api_error_handler.dart';
-import 'package:flutter_sixvalley_ecommerce/features/address/domain/model/address_model.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/data/datasource/remote/dio/dio_client.dart';
+import 'package:flutter_almirtech_ecommerce/data/datasource/remote/exception/api_error_handler.dart';
+import 'package:flutter_almirtech_ecommerce/features/address/domain/model/address_model.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/auth/controllers/auth_controller.dart';
+import 'package:flutter_almirtech_ecommerce/main.dart';
+import 'package:flutter_almirtech_ecommerce/utill/app_constants.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
 import 'package:provider/provider.dart';
 
 

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/category/domain/model/category_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/category/domain/repo/category_repo.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/features/brand/controllers/brand_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/provider/product_provider.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/category/domain/model/category_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/category/domain/repo/category_repo.dart';
+import 'package:flutter_almirtech_ecommerce/helper/api_checker.dart';
+import 'package:flutter_almirtech_ecommerce/main.dart';
+import 'package:flutter_almirtech_ecommerce/features/brand/controllers/brand_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/provider/product_provider.dart';
 import 'package:provider/provider.dart';
 
 class CategoryController extends ChangeNotifier {

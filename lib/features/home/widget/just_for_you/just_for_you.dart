@@ -1,10 +1,10 @@
 
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/model/product_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/domain/model/product_model.dart';
 
-import 'package:flutter_sixvalley_ecommerce/features/product/provider/product_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/home/widget/just_for_you/just_for_you_product_card.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/provider/product_provider.dart';
+import 'package:flutter_almirtech_ecommerce/features/home/widget/just_for_you/just_for_you_product_card.dart';
 import 'package:provider/provider.dart';
 
 class JustForYouView extends StatefulWidget {

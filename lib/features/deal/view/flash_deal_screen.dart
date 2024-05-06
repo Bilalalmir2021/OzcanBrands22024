@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/deal/provider/flash_deal_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_app_bar.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/title_row.dart';
-import 'package:flutter_sixvalley_ecommerce/features/deal/widget/flash_deals_view.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/features/deal/provider/flash_deal_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_app_bar.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/title_row.dart';
+import 'package:flutter_almirtech_ecommerce/features/deal/widget/flash_deals_view.dart';
 import 'package:provider/provider.dart';
 
 class FlashDealScreen extends StatefulWidget {

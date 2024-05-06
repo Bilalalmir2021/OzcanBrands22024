@@ -1,5 +1,5 @@
-import 'package:flutter_sixvalley_ecommerce/localization/model/language_model.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/localization/model/language_model.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
 class AppConstants {
   static const String appName = '';
   static const String slogan = '';
@@ -178,7 +178,7 @@ static const String otpVerificationForDigitalProduct = '/api/v1/customer/order/d
   static const String userAddress = 'user_address';
 
   static List<LanguageModel> languages = [
-    LanguageModel(imageUrl: Images.en, languageName: 'English', countryCode: 'US', languageCode: 'en'),
     LanguageModel(imageUrl: Images.ar, languageName: 'Arabic', countryCode: 'IQ', languageCode: 'ar'),
+    LanguageModel(imageUrl: Images.en, languageName: 'English', countryCode: 'US', languageCode: 'en'),
   ];
 }

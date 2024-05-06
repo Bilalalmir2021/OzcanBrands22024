@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/provider/product_details_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/rating_bar.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/view/faq_and_review_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/widget/review_widget.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/provider/product_details_provider.dart';
+import 'package:flutter_almirtech_ecommerce/theme/provider/theme_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/color_resources.dart';
+import 'package:flutter_almirtech_ecommerce/utill/custom_themes.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/rating_bar.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/view/faq_and_review_screen.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/widget/review_widget.dart';
 import 'package:provider/provider.dart';
 
 class ReviewSection extends StatelessWidget {

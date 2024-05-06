@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/loyaltyPoint/domain/model/loyalty_point_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/loyaltyPoint/domain/repo/loyalty_point_repo.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/show_custom_snakbar.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/loyaltyPoint/domain/model/loyalty_point_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/loyaltyPoint/domain/repo/loyalty_point_repo.dart';
+import 'package:flutter_almirtech_ecommerce/helper/api_checker.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/main.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/show_custom_snakbar.dart';
 
 class LoyaltyPointProvider extends ChangeNotifier {
   final LoyaltyPointRepo? loyaltyPointRepo;

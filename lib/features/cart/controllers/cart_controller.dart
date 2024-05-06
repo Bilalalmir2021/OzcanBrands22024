@@ -2,21 +2,21 @@
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/checkout/domain/model/selected_shipping_type.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/error_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/cart_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/chosen_shipping_method.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/shipping_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/model/product_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/checkout/domain/model/selected_shipping_type.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/error_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/cart/domain/models/cart_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/cart/domain/models/chosen_shipping_method.dart';
+import 'package:flutter_almirtech_ecommerce/features/cart/domain/models/shipping_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/domain/model/product_model.dart';
 
-import 'package:flutter_sixvalley_ecommerce/data/model/response_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/shipping_method_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/repositories/cart_repository.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/show_custom_snakbar.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/response_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/cart/domain/models/shipping_method_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/cart/domain/repositories/cart_repository.dart';
+import 'package:flutter_almirtech_ecommerce/helper/api_checker.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/main.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/show_custom_snakbar.dart';
 
 class CartController extends ChangeNotifier {
   final CartRepository? cartRepo;

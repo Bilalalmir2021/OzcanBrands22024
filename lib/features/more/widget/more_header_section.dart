@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/profile/provider/profile_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_image.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/not_logged_in_bottom_sheet.dart';
-import 'package:flutter_sixvalley_ecommerce/features/profile/view/profile_screen.dart';
+import 'package:flutter_almirtech_ecommerce/features/auth/controllers/auth_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/profile/provider/profile_provider.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/provider/splash_provider.dart';
+import 'package:flutter_almirtech_ecommerce/theme/provider/theme_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/color_resources.dart';
+import 'package:flutter_almirtech_ecommerce/utill/custom_themes.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_image.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/not_logged_in_bottom_sheet.dart';
+import 'package:flutter_almirtech_ecommerce/features/profile/view/profile_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../../../localization/language_constrants.dart';
@@ -106,7 +106,9 @@ class MoreHeaderSection extends StatelessWidget {
                           if (isGuestMode)
                             Text('${getTranslated('login', context)}',
                                 style: textMedium.copyWith(
-                                    color: ColorResources.white, fontSize: 12)),
+                                    color: ColorResources.white,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold)),
                           if (!isGuestMode)
                             const SizedBox(height: Dimensions.paddingSizeSmall),
                           if (!isGuestMode)

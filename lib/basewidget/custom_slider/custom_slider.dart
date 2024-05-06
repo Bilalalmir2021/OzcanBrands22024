@@ -2,7 +2,7 @@
 import 'dart:async';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_slider/utils.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_slider/utils.dart';
 import 'carousel_controller.dart';
 import 'carousel_options.dart';
 import 'carousel_state.dart';

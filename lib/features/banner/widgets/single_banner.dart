@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/banner/controllers/banner_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/banner/domain/models/banner_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_image.dart';
+import 'package:flutter_almirtech_ecommerce/features/banner/controllers/banner_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/banner/domain/models/banner_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/provider/splash_provider.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_image.dart';
 import 'package:provider/provider.dart';
 
 

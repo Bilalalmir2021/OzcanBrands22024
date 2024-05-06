@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/loyaltyPoint/provider/loyalty_point_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/profile/provider/profile_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_button.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/not_loggedin_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/home/view/home_screens.dart';
-import 'package:flutter_sixvalley_ecommerce/features/loyaltyPoint/widget/loyalty_point_converter_dialogue.dart';
-import 'package:flutter_sixvalley_ecommerce/features/loyaltyPoint/widget/loyalty_point_list.dart';
-import 'package:flutter_sixvalley_ecommerce/features/loyaltyPoint/widget/loyalty_point_top_card.dart';
+import 'package:flutter_almirtech_ecommerce/features/loyaltyPoint/provider/loyalty_point_provider.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/features/auth/controllers/auth_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/profile/provider/profile_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/custom_themes.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_button.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/not_loggedin_widget.dart';
+import 'package:flutter_almirtech_ecommerce/features/home/view/home_screens.dart';
+import 'package:flutter_almirtech_ecommerce/features/loyaltyPoint/widget/loyalty_point_converter_dialogue.dart';
+import 'package:flutter_almirtech_ecommerce/features/loyaltyPoint/widget/loyalty_point_list.dart';
+import 'package:flutter_almirtech_ecommerce/features/loyaltyPoint/widget/loyalty_point_top_card.dart';
 import 'package:provider/provider.dart';
 
 

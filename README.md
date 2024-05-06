@@ -1,4 +1,4 @@
-# 6valley ecommerce
+# almirtech ecommerce
 
 A new Flutter setup application for starting a project.
 

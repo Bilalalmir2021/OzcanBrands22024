@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/coupon/provider/coupon_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_app_bar.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/no_internet_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/not_loggedin_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/coupon/widget/coupon_item.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order/widget/order_shimmer.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/features/auth/controllers/auth_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/coupon/provider/coupon_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_app_bar.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/no_internet_screen.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/not_loggedin_widget.dart';
+import 'package:flutter_almirtech_ecommerce/features/coupon/widget/coupon_item.dart';
+import 'package:flutter_almirtech_ecommerce/features/order/widget/order_shimmer.dart';
 import 'package:provider/provider.dart';
 
 class CouponList extends StatefulWidget {

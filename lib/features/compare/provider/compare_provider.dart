@@ -1,11 +1,11 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_sixvalley_ecommerce/features/compare/domain/model/attribute_model.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/compare/domain/model/compare_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/compare/domain/repo/compare_repo.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/show_custom_snakbar.dart';
+import 'package:flutter_almirtech_ecommerce/features/compare/domain/model/attribute_model.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/compare/domain/model/compare_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/compare/domain/repo/compare_repo.dart';
+import 'package:flutter_almirtech_ecommerce/helper/api_checker.dart';
+import 'package:flutter_almirtech_ecommerce/main.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/show_custom_snakbar.dart';
 
 
 class CompareProvider extends ChangeNotifier {

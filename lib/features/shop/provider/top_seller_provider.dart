@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/model/top_seller_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/repo/top_seller_repo.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/shop/domain/model/top_seller_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/shop/domain/repo/top_seller_repo.dart';
 
 class TopSellerProvider extends ChangeNotifier {
   final TopSellerRepo? topSellerRepo;

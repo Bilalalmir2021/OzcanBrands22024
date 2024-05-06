@@ -1,4 +1,4 @@
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
 abstract class RepoInterface{
 
   /// Its fetch data related your feature

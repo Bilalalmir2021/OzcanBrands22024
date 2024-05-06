@@ -4,12 +4,12 @@ import 'package:flutter/foundation.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/push_notification/model/notification_body.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/chat/view/inbox_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/features/notification/view/notification_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order/view/order_details_screen.dart';
+import 'package:flutter_almirtech_ecommerce/main.dart';
+import 'package:flutter_almirtech_ecommerce/push_notification/model/notification_body.dart';
+import 'package:flutter_almirtech_ecommerce/utill/app_constants.dart';
+import 'package:flutter_almirtech_ecommerce/features/chat/view/inbox_screen.dart';
+import 'package:flutter_almirtech_ecommerce/features/notification/view/notification_screen.dart';
+import 'package:flutter_almirtech_ecommerce/features/order/view/order_details_screen.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:http/http.dart' as http;
 
@@ -130,7 +130,7 @@ class NotificationHelper {
 
   static Future<void> showTextNotification(String title, String body, String orderID, NotificationBody? notificationBody, FlutterLocalNotificationsPlugin fln) async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
-      '6valley', '6valley', playSound: true,
+      'OzcanBrands', 'OzcanBrands', playSound: true,
       importance: Importance.max, priority: Priority.max, sound: RawResourceAndroidNotificationSound('notification'),
     );
     const NotificationDetails platformChannelSpecifics = NotificationDetails(android: androidPlatformChannelSpecifics);
@@ -143,7 +143,7 @@ class NotificationHelper {
       contentTitle: title, htmlFormatContentTitle: true,
     );
     AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
-      '6valley', '6valley', importance: Importance.max,
+      'OzcanBrands', 'OzcanBrands', importance: Importance.max,
       styleInformation: bigTextStyleInformation, priority: Priority.max, playSound: true,
       sound: const RawResourceAndroidNotificationSound('notification'),
     );
@@ -160,7 +160,7 @@ class NotificationHelper {
       summaryText: body, htmlFormatSummaryText: true,
     );
     final AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
-      '6valley', '6valley',
+      'OzcanBrands', 'OzcanBrands',
       largeIcon: FilePathAndroidBitmap(largeIconPath), priority: Priority.max, playSound: true,
       styleInformation: bigPictureStyleInformation, importance: Importance.max,
       sound: const RawResourceAndroidNotificationSound('notification'),

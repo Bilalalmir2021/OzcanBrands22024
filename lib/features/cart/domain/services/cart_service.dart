@@ -1,8 +1,8 @@
 import 'dart:developer';
-import 'package:flutter_sixvalley_ecommerce/features/cart/controllers/cart_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/cart_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
+import 'package:flutter_almirtech_ecommerce/features/cart/controllers/cart_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/cart/domain/models/cart_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/provider/splash_provider.dart';
+import 'package:flutter_almirtech_ecommerce/main.dart';
 import 'package:provider/provider.dart';
 
 class CartService{

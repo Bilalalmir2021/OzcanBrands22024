@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/deal/provider/featured_deal_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_slider/carousel_options.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_slider/custom_slider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/home/widget/aster_theme/find_what_you_need_shimmer.dart';
-import 'package:flutter_sixvalley_ecommerce/features/deal/widget/featured_deal_card.dart';
+import 'package:flutter_almirtech_ecommerce/features/deal/provider/featured_deal_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_slider/carousel_options.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_slider/custom_slider.dart';
+import 'package:flutter_almirtech_ecommerce/features/home/widget/aster_theme/find_what_you_need_shimmer.dart';
+import 'package:flutter_almirtech_ecommerce/features/deal/widget/featured_deal_card.dart';
 import 'package:provider/provider.dart';
 
 

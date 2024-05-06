@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/deal/domain/repo/featured_deal_repo.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/model/product_model.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/deal/domain/repo/featured_deal_repo.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/domain/model/product_model.dart';
 
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
+import 'package:flutter_almirtech_ecommerce/helper/api_checker.dart';
 
 class FeaturedDealProvider extends ChangeNotifier {
   final FeaturedDealRepo? featuredDealRepo;

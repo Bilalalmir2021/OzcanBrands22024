@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/brand/domain/models/brand_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/brand/domain/repositories/brand_repository.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/brand/domain/models/brand_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/brand/domain/repositories/brand_repository.dart';
+import 'package:flutter_almirtech_ecommerce/helper/api_checker.dart';
 
 class BrandController extends ChangeNotifier {
   final BrandRepository? brandRepo;

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/banner/domain/models/banner_model.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/banner/domain/repositories/banner_repository.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/model/product_model.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/features/brand/controllers/brand_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/category/controllers/category_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/provider/top_seller_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/view/brand_and_category_product_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/view/product_details_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/view/shop_screen.dart';
+import 'package:flutter_almirtech_ecommerce/features/banner/domain/models/banner_model.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/banner/domain/repositories/banner_repository.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/domain/model/product_model.dart';
+import 'package:flutter_almirtech_ecommerce/helper/api_checker.dart';
+import 'package:flutter_almirtech_ecommerce/features/brand/controllers/brand_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/category/controllers/category_controller.dart';
+import 'package:flutter_almirtech_ecommerce/features/shop/provider/top_seller_provider.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/view/brand_and_category_product_screen.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/view/product_details_screen.dart';
+import 'package:flutter_almirtech_ecommerce/features/shop/view/shop_screen.dart';
 import 'package:provider/provider.dart';
 
 class BannerController extends ChangeNotifier {

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/chat/domain/model/message_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/chat/provider/chat_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/provider/localization_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_image.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/image_diaglog.dart';
+import 'package:flutter_almirtech_ecommerce/features/chat/domain/model/message_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/chat/provider/chat_provider.dart';
+import 'package:flutter_almirtech_ecommerce/localization/provider/localization_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/app_constants.dart';
+import 'package:flutter_almirtech_ecommerce/utill/color_resources.dart';
+import 'package:flutter_almirtech_ecommerce/utill/custom_themes.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/provider/splash_provider.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_image.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/image_diaglog.dart';
 import 'package:provider/provider.dart';
 
 class MessageBubble extends StatelessWidget {

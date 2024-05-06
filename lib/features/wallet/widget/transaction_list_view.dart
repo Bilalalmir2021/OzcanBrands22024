@@ -1,11 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wallet/domain/model/transaction_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wallet/provider/wallet_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/no_internet_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/features/home/shimmer/transaction_shimmer.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wallet/widget/transaction_widget.dart';
+import 'package:flutter_almirtech_ecommerce/features/wallet/domain/model/transaction_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/wallet/provider/wallet_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/no_internet_screen.dart';
+import 'package:flutter_almirtech_ecommerce/features/home/shimmer/transaction_shimmer.dart';
+import 'package:flutter_almirtech_ecommerce/features/wallet/widget/transaction_widget.dart';
 import 'package:provider/provider.dart';
 
 class TransactionListView extends StatelessWidget {

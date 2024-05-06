@@ -1,12 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/loyaltyPoint/domain/model/loyalty_point_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/loyaltyPoint/provider/loyalty_point_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/no_internet_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/product_shimmer.dart';
-import 'package:flutter_sixvalley_ecommerce/features/loyaltyPoint/widget/loyalty_point_widget.dart';
+import 'package:flutter_almirtech_ecommerce/features/loyaltyPoint/domain/model/loyalty_point_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/loyaltyPoint/provider/loyalty_point_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/no_internet_screen.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/product_shimmer.dart';
+import 'package:flutter_almirtech_ecommerce/features/loyaltyPoint/widget/loyalty_point_widget.dart';
 import 'package:provider/provider.dart';
 
 class LoyaltyPointListView extends StatelessWidget {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/model/seller_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/repo/shop_repo.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/features/home/model/more_store_model.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/shop/domain/model/seller_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/shop/domain/repo/shop_repo.dart';
+import 'package:flutter_almirtech_ecommerce/helper/api_checker.dart';
+import 'package:flutter_almirtech_ecommerce/features/home/model/more_store_model.dart';
 
 class SellerProvider extends ChangeNotifier {
   final SellerRepo? sellerRepo;

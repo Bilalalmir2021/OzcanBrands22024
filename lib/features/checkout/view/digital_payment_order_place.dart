@@ -3,12 +3,12 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/animated_custom_dialog.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/order_place_success_dialog.dart';
-import 'package:flutter_sixvalley_ecommerce/features/dashboard/dashboard_screen.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/main.dart';
+import 'package:flutter_almirtech_ecommerce/utill/app_constants.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/animated_custom_dialog.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/order_place_success_dialog.dart';
+import 'package:flutter_almirtech_ecommerce/features/dashboard/dashboard_screen.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class DigitalPaymentScreen extends StatefulWidget {

@@ -4,17 +4,17 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:expandable_bottom_sheet/expandable_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/profile/provider/profile_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_app_bar.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/show_custom_snakbar.dart';
-import 'package:flutter_sixvalley_ecommerce/features/refer_and_earn/widgets/refer_hint_view.dart';
+import 'package:flutter_almirtech_ecommerce/localization/language_constrants.dart';
+import 'package:flutter_almirtech_ecommerce/features/profile/provider/profile_provider.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/provider/splash_provider.dart';
+import 'package:flutter_almirtech_ecommerce/theme/provider/theme_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/app_constants.dart';
+import 'package:flutter_almirtech_ecommerce/utill/custom_themes.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/utill/images.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_app_bar.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/show_custom_snakbar.dart';
+import 'package:flutter_almirtech_ecommerce/features/refer_and_earn/widgets/refer_hint_view.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -82,7 +82,7 @@ class ReferAndEarnScreen extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       child: Row(mainAxisAlignment: MainAxisAlignment.center,
                       children: shareItem.map((item) => GestureDetector(
-                        onTap: () => Share.share('Greetings, 6Valley is the best e-commerce platform in the country. If you are new to this website don’t forget to use "${Provider.of<ProfileProvider>(context, listen: false).userInfoModel?.referCode??''}" as the referral code while sign up into 6valley. ${'${Provider.of<SplashProvider>(context, listen: false).configModel?.refSignup}${Provider.of<ProfileProvider>(context, listen: false).userInfoModel?.referCode??''}'}',),
+                        onTap: () => Share.share('Greetings, OzcanBrands is the best e-commerce platform in the country. If you are new to this website don’t forget to use "${Provider.of<ProfileProvider>(context, listen: false).userInfoModel?.referCode??''}" as the referral code while sign up into OzcanBrands. ${'${Provider.of<SplashProvider>(context, listen: false).configModel?.refSignup}${Provider.of<ProfileProvider>(context, listen: false).userInfoModel?.referCode??''}'}',),
                         child: Container(margin: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
                           child: Image.asset(item, height: 45, width: 45),),
                       )).toList()))])),

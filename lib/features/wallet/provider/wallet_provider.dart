@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/error_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wallet/domain/model/transaction_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wallet/domain/repo/wallet_repo.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/show_custom_snakbar.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wallet/view/add_fund_digital_payment_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wallet/domain/model/wallet_bonus_model.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/error_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/wallet/domain/model/transaction_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/wallet/domain/repo/wallet_repo.dart';
+import 'package:flutter_almirtech_ecommerce/helper/api_checker.dart';
+import 'package:flutter_almirtech_ecommerce/helper/price_converter.dart';
+import 'package:flutter_almirtech_ecommerce/main.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/show_custom_snakbar.dart';
+import 'package:flutter_almirtech_ecommerce/features/wallet/view/add_fund_digital_payment_screen.dart';
+import 'package:flutter_almirtech_ecommerce/features/wallet/domain/model/wallet_bonus_model.dart';
 
 class WalletTransactionProvider extends ChangeNotifier {
   final WalletTransactionRepo? transactionRepo;

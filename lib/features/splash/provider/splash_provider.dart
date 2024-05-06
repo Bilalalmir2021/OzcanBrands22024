@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/domain/model/config_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/domain/repo/splash_repo.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
+import 'package:flutter_almirtech_ecommerce/data/model/api_response.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/domain/model/config_model.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/domain/repo/splash_repo.dart';
+import 'package:flutter_almirtech_ecommerce/helper/api_checker.dart';
 
 class SplashProvider extends ChangeNotifier {
   final SplashRepo? splashRepo;

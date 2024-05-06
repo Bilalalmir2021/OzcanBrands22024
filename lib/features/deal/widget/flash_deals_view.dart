@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/features/deal/provider/flash_deal_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_image.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_slider/carousel_options.dart';
-import 'package:flutter_sixvalley_ecommerce/basewidget/custom_slider/custom_slider.dart';
-import 'package:flutter_sixvalley_ecommerce/features/deal/widget/flash_deal_card.dart';
-import 'package:flutter_sixvalley_ecommerce/features/home/shimmer/flash_deal_shimmer.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/view/product_details_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/widget/favourite_button.dart';
+import 'package:flutter_almirtech_ecommerce/helper/price_converter.dart';
+import 'package:flutter_almirtech_ecommerce/features/deal/provider/flash_deal_provider.dart';
+import 'package:flutter_almirtech_ecommerce/features/splash/provider/splash_provider.dart';
+import 'package:flutter_almirtech_ecommerce/theme/provider/theme_provider.dart';
+import 'package:flutter_almirtech_ecommerce/utill/color_resources.dart';
+import 'package:flutter_almirtech_ecommerce/utill/custom_themes.dart';
+import 'package:flutter_almirtech_ecommerce/utill/dimensions.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_image.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_slider/carousel_options.dart';
+import 'package:flutter_almirtech_ecommerce/basewidget/custom_slider/custom_slider.dart';
+import 'package:flutter_almirtech_ecommerce/features/deal/widget/flash_deal_card.dart';
+import 'package:flutter_almirtech_ecommerce/features/home/shimmer/flash_deal_shimmer.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/view/product_details_screen.dart';
+import 'package:flutter_almirtech_ecommerce/features/product/widget/favourite_button.dart';
 import 'package:provider/provider.dart';
 
 
